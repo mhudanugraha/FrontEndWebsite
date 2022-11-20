@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+        body {
+            font-family: 'Oswald';
+            margin: 0;
+            padding: 0;
+            background-color: #CAF0F8;
+        }
+
+        .alinea{
+            text-align: justify;
+            text-indent: 35px;
+            color: #606060;
+        }
+        .pj {
+            font-family: 'Poppins';
+            letter-spacing: 3px;
+        }
+        .jumbotron {
+            font-size: 25px;
+            padding: 60px;
+            padding-top: 40px;
+            background-color: #00B4D8;
+            text-align: left;
+            color: white;
+            margin-top: 0cm;
+        }
+
+        .button {
+            border-radius: 4px;
+            background-color: #00B4D8;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 15px;
+            padding: 3px;
+            padding-bottom: 12px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            float: right;
+            vertical-align: middle;
+            margin-top: 0px;
+            
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        nav {
+            background-color: #00B4D8;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: inline;
+            z-index: 3;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        
+        main {
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+
+        .img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #606060;
+            font-size: 35px;
+        }
+
+        h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .table_aside {
+            text-align: left;
+        }
+
+        .table_article {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            text-align: left;
+            color: #606060;
+        }
+
+        .row_article::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #6e9aae;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .social-ico li {
+            display: inline;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .social-ico a {
+            text-decoration: none;
+            color: white;
+            padding-right: 35px;
+            transition: 700ms;
+        }
+
+        .social-ico a:hover {
+            font-weight: bold;
+            font-size: 24px;
+            transition: 700ms;
+        }
+
+        #content {
+            float: left;
+            width: 75%;
+        }
+
+        aside {
+            float: right;
+            width: 25%;
+        }
+
+        .profile header {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bio {
+            padding-top: 100px;
+        }
+
+        .bio header {
+            text-align: center;
+        }
+
+        .bio img {
+            width: 200px;
+        }
+
+        .profil_picture {
+            border-radius: 50%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            #content,
+            aside {
+                width: 100%;
+                padding: 0;
+            }
+        }
